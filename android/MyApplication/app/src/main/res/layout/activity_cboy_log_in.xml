@@ -25,6 +25,8 @@
         android:text="Cleaning Boy LogIn"
         />
     <EditText
+
+        android:id="@+id/cboy_uname"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="25dp"
@@ -35,6 +37,8 @@
 
 
     <EditText
+        android:id="@+id/cboy_pass"
+
         android:inputType="textPassword"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
@@ -45,6 +49,9 @@
         android:layout_height="wrap_content" />
 
     <Button
+
+        android:id="@+id/cboy_login_but"
+
         android:textSize="20dp"
         android:text="LOGIN"
         android:layout_marginTop="15dp"
@@ -64,6 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="1dp" />
     <Button
+        android:id="@+id/cboy_admin"
+
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="25dp"
@@ -76,6 +85,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/cboy_user"
+
         android:textSize="20dp"
         android:text="USER LOGIN"
         android:layout_margin="25dp"
