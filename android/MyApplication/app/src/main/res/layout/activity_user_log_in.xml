@@ -25,16 +25,18 @@
         android:text="User LogIn"
         />
     <EditText
+        android:id="@+id/loginuser"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:hint="Enter Your Username"
+        android:hint="Enter Your Email Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 
     <EditText
+        android:id="@+id/loginpass"
         android:inputType="textPassword"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
@@ -45,6 +47,7 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/loginbut"
         android:textSize="20dp"
         android:text="LOGIN"
         android:layout_marginTop="15dp"
@@ -64,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp" />
     <Button
+        android:id="@+id/adminlogin"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="25dp"
@@ -76,6 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
+        android:id="@+id/boylogin"
         android:textSize="20dp"
         android:text="CLEANING BOY  LOGIN"
         android:layout_margin="25dp"

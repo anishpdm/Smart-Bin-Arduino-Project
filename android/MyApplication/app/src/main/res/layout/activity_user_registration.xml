@@ -28,6 +28,7 @@
             android:text="User Registration"
             />
         <EditText
+            android:id="@+id/userreg_name"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="25dp"
@@ -37,6 +38,18 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/userreg_mobile"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Mobile Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/userreg_email"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="25dp"
@@ -45,17 +58,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <EditText
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="Enter Your Username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+
+
 
 
         <EditText
+            android:id="@+id/userreg_pass"
             android:inputType="textPassword"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
@@ -64,17 +73,11 @@
             android:hint="Enter Your Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <EditText
-            android:inputType="textPassword"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="Re-Enter Password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
 
         <Button
+            android:id="@+id/userreg_regbutton"
+
             android:textSize="20dp"
             android:text="REGISTER"
             android:layout_marginTop="15dp"
@@ -94,6 +97,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp" />
         <Button
+            android:id="@+id/userreg_adminlogin"
+
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="25dp"
@@ -106,6 +111,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+            android:id="@+id/userreg_clean"
+
             android:textSize="20dp"
             android:text="CLEANING BOY  LOGIN"
             android:layout_margin="25dp"
