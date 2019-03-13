@@ -60,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp" />
         <Button
+            android:id="@+id/MainUserLogin"
             android:textSize="20dp"
             android:text="USER LOGIN"
             android:layout_margin="15dp"
@@ -67,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
+            android:id="@+id/MainCleanBoyLogIn"
             android:textSize="20dp"
             android:text="CLEANING BOY  LOGIN"
             android:layout_margin="15dp"

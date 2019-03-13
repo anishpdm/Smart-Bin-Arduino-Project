@@ -125,9 +125,9 @@ public class UserRegistration extends AppCompatActivity {
                 Map<String,String> params = new HashMap<String, String>();
                 params.put("name",s1);
                 params.put("email",s2);
-                params.put("mobile",s3);
+                params.put("mobile",s4);
 
-                params.put("password",s4);
+                params.put("password",s3);
 
 
 

@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class UserLogIn extends AppCompatActivity {
 EditText ed1,ed2;
-Button b1,b2,b3;
+Button b1,b2,b3,b4;
 String s1,s2;
 
     @Override
@@ -37,6 +37,15 @@ String s1,s2;
         b1=(Button)findViewById(R.id.loginbut);
         b2=(Button)findViewById(R.id.adminlogin);
         b3=(Button)findViewById(R.id.boylogin);
+        b4=(Button)findViewById(R.id.newreg);
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),UserRegistration.class);
+                startActivity(intent);
+            }
+        });
 
 
         b1.setOnClickListener(new View.OnClickListener() {

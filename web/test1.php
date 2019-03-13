@@ -374,7 +374,7 @@ class TspBranchBound
 try {
     $tsp = TspBranchBound::getInstance();
     include './dbcon.php';
-    $sql = "SELECT  DISTINCT bs.bin_id,`location`, `bin_lat`, `bin_long`,bs.status FROM `bin` b JOIN bin_status bs ON b.`bin_id`=bs.`bin_id` WHERE bs.status<=50 ORDER BY bs.bin_status_id DESC  ";
+    $sql = "SELECT b.*,bs.* FROM bin b JOIN ( SELECT b.`bin_id`, max(bs.`bin_status_id`) binstatus FROM `bin` b JOIN bin_status bs ON b.`bin_id`=bs.`bin_id` GROUP BY b.`bin_id` ) a ON a.bin_id=b.bin_id JOIN bin_status bs on bs.bin_status_id=a.binstatus  ";
 
     $result = $con->query($sql);
 

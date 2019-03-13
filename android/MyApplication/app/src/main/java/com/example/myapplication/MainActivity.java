@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     EditText ed1,ed2;
-    Button b;
+    Button b,b1,b2;
     String s1,s2;
 
     @Override
@@ -24,6 +24,29 @@ public class MainActivity extends AppCompatActivity {
         ed2=(EditText)findViewById(R.id.pass);
 
         b=(Button)findViewById(R.id.loginButton);
+        b1=(Button)findViewById(R.id.MainCleanBoyLogIn);
+        b2=(Button)findViewById(R.id.MainUserLogin);
+
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent i=new Intent(getApplicationContext(),UserLogIn.class);
+                startActivity(i);
+            }
+        });
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),CBoyLogIn.class);
+                startActivity(i);
+
+            }
+        });
+
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
