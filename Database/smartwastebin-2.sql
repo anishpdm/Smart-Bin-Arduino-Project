@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 10, 2019 at 04:35 AM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 5.6.33
+-- Generation Time: Jun 10, 2019 at 08:44 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 5.6.39
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `smartwastebin`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Accept`
+--
+
+CREATE TABLE `Accept` (
+  `Id` int(11) NOT NULL,
+  `BinId` int(11) NOT NULL,
+  `AcceptStatus` int(11) NOT NULL,
+  `AcceptedOn` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Accept`
+--
+
+INSERT INTO `Accept` (`Id`, `BinId`, `AcceptStatus`, `AcceptedOn`) VALUES
+(1, 9, 0, '2019-06-10 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -503,6 +523,12 @@ INSERT INTO `users` (`user_id`, `name`, `mobile`, `email`, `password`) VALUES
 --
 
 --
+-- Indexes for table `Accept`
+--
+ALTER TABLE `Accept`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
@@ -547,6 +573,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `Accept`
+--
+ALTER TABLE `Accept`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `admin`
