@@ -1,0 +1,31 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_marginTop="200px"
+        android:layout_margin="20px"
+        android:textSize="24dp"
+        android:text="Bin name:"
+        android:id="@+id/binname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:visibility="invisible"
+
+        android:id="@+id/acceptbut"
+        android:layout_margin="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCEPT REQUEST"
+
+        android:background="@color/buttoncolor"
+
+        />
+
+</LinearLayout>

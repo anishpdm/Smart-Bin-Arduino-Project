@@ -72,7 +72,7 @@ public class CBoyLogIn extends AppCompatActivity {
     private void callApi() {
 
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.31.79/smartbin/web/boylogin_api.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.43.167/Smart-Bin-Arduino-Project/web/boylogin_api.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -84,7 +84,7 @@ public class CBoyLogIn extends AppCompatActivity {
 //                                Toast.makeText(getApplicationContext(), "Succesfully Registered " + resfromserver, Toast.LENGTH_LONG).show();
 
 
-                                Intent intent=new Intent(getApplicationContext(),AdminView.class);
+                                Intent intent=new Intent(getApplicationContext(),CBoyView.class);
                                 startActivity(intent);
 
 
