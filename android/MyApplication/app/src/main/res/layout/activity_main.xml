@@ -70,7 +70,7 @@
         <Button
             android:id="@+id/MainCleanBoyLogIn"
             android:textSize="20dp"
-            android:text="CLEANING BOY  LOGIN"
+            android:text="WASTE COLLECTOR  LOGIN"
             android:layout_margin="15dp"
             android:background="@drawable/button_style1"
             android:layout_width="match_parent"

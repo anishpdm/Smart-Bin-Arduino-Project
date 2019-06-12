@@ -61,7 +61,7 @@ public class ViewRequests extends AppCompatActivity {
     private void loadRequests() {
 
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, "http://192.168.43.167/Smart-Bin-Arduino-Project/web/getAccept.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, Constants.ip+"getAccept.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -82,13 +82,14 @@ public class ViewRequests extends AppCompatActivity {
                                     JSONObject object = jsonArray.getJSONObject(i);
                                     String location = object.getString("location").trim();
 
-                                    binName.setText(location);
+                                    binName.setText(""+location);
+
 
                                 }
 
 
                             } else {
-                                Toast.makeText(getApplicationContext(), "Error " + resfromserver, Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), " " + resfromserver, Toast.LENGTH_LONG).show();
                             }
                         } catch (JSONException ob) {
                             Toast.makeText(getApplicationContext(), "Exception  " + ob, Toast.LENGTH_LONG).show();
@@ -129,7 +130,7 @@ public class ViewRequests extends AppCompatActivity {
 
 
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.43.167/Smart-Bin-Arduino-Project/web/AcceptRequest.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.ip+"AcceptRequest.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -138,9 +139,10 @@ public class ViewRequests extends AppCompatActivity {
                             String resfromserver = jsonObject.getString("status");
                             if (resfromserver.equals("success")) {
 
-                          Toast.makeText(getApplicationContext(), "Succesfully Accepted the Request " , Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "Succesfully Accepted the Request " , Toast.LENGTH_LONG).show();
 
-
+Intent i=new Intent(getApplicationContext(), CBoyView.class);
+startActivity(i);
 
 
                             } else {

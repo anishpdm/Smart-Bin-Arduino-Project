@@ -88,7 +88,7 @@ public class UserRegistration extends AppCompatActivity {
 
     private void callAPI() {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.31.79/smartbin/web/userreg_api.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.ip+"userreg_api.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

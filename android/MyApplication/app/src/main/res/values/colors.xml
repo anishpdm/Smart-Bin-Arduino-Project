@@ -2,13 +2,13 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#5C1D0101</color>
 
 
-    <color name="start1">#4776E6</color>
-    <color name="stop1"> #8E54E9 </color>
+    <color name="start1">#0612F5</color>
+    <color name="stop1">#A7935BEC</color>
 
-    <color name="buttoncolor">#FFC837</color>
+    <color name="buttoncolor">#FF9800</color>
 
 
 
@@ -16,10 +16,10 @@
     <color name="backgroundcolor">#fcfcfc</color>
     <color name="lightgray">#ededed</color>
     <color name="deeppurple">#7c4dff</color>
-    <color name="yello">#ffb300</color>
+    <color name="yello">#FFb300</color>
     <color name="green">#00bfa5</color>
 
-    <color name="darkblue">#23283a</color>
+    <color name="darkblue">#553F51B5</color>
     <!--<color name="testcolorblue">#51B0E9</color>-->
     <color name="pink">#fe104d</color>
 </resources>

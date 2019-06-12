@@ -1,99 +1,99 @@
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@drawable/gradient_back"
-    >
+    android:orientation="vertical">
 
     <TextView
-        android:textColor="#ffff"
-        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="45dp"
-        android:textSize="35dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SMART BIN"
         android:gravity="center"
-        />
+        android:text="SMART BIN"
+        android:textColor="#ffff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <TextView
-        android:textColor="#ffff"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
         android:text="User LogIn"
-        />
+        android:textColor="#ffff" />
+
     <EditText
         android:id="@+id/loginuser"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="Enter Your Email Id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter Your Email Id" />
 
 
     <EditText
         android:id="@+id/loginpass"
-        android:inputType="textPassword"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="Enter Your Password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/loginbut"
-        android:textSize="20dp"
-        android:text="LOGIN"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/button_style1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_style1"
+        android:text="LOGIN"
+        android:textSize="20dp" />
 
     <View
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:background="#ffff"
         android:layout_width="match_parent"
-        android:layout_height="1dp" />
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#ffff" />
+
     <Button
         android:id="@+id/newreg"
-        android:textSize="20dp"
-        android:text="New User Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:background="@drawable/button_style1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="New User Registration"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/adminlogin"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
 
-        android:textSize="20dp"
-        android:text="ADMIN LOGIN"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
 
         android:background="@drawable/button_style1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="ADMIN LOGIN"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/boylogin"
-        android:textSize="20dp"
-        android:text="CLEANING BOY  LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:background="@drawable/button_style1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="WASTE COLLECTOR LOGIN"
+        android:textSize="20dp" />
 </LinearLayout>

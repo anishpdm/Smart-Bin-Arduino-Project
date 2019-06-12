@@ -3,7 +3,7 @@ if (isset($_POST["Username"])) {
     $Username = $_POST["Username"];
     $password = $_POST["password"];
 
-    
+
     include './dbcon.php';
      $sql = "SELECT * FROM `binboys` WHERE `Username`='$Username' and `Password`='$password' ";
 
@@ -18,6 +18,12 @@ if (isset($_POST["Username"])) {
 
     echo json_encode($r);
 
+
+
+}
+else{
+  $r['status']="No Value";
+  echo json_encode($r);
 
 
 }

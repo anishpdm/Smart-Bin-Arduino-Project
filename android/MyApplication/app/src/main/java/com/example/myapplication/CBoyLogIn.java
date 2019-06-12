@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +27,7 @@ public class CBoyLogIn extends AppCompatActivity {
     EditText ed1,ed2;
     Button b1,b2,b3;
     String s1,s2;
+    String Url=Constants.ip+"boylogin_api.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,8 +73,11 @@ public class CBoyLogIn extends AppCompatActivity {
 
     private void callApi() {
 
+        //Toast.makeText(getApplicationContext(),"Url : "+ Url,Toast.LENGTH_LONG).show();
+        Log.d("Url",Url);
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.43.167/Smart-Bin-Arduino-Project/web/boylogin_api.php",
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -100,6 +105,7 @@ public class CBoyLogIn extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(), "Error Listner:" + error, Toast.LENGTH_LONG).show();
 
                     }
                 })

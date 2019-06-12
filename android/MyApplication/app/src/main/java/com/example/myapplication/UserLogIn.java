@@ -84,7 +84,7 @@ callApi();
 
     private void callApi() {
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://192.168.31.79/smartbin/web/userlogin_api.php",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Constants.ip+"userlogin_api.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

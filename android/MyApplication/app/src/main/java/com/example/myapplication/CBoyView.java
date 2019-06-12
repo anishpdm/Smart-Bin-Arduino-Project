@@ -12,7 +12,7 @@ public class CBoyView extends AppCompatActivity {
 
 
 
-    ImageView iv,iv2,iv3;
+    ImageView iv,iv2,iv3,iv4,iv5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,29 @@ public class CBoyView extends AppCompatActivity {
         iv3=(ImageView)findViewById(R.id.pend);
 
         iv2=(ImageView)findViewById(R.id.logout);
+
+        iv4=(ImageView)findViewById(R.id.VRoute);
+        iv5=(ImageView)findViewById(R.id.Vmap);
+
+
+
+        iv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),RouteView.class);
+                startActivity(i);
+            }
+        });
+
+
+        iv5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),BinMap.class);
+                startActivity(i);
+            }
+        });
+
 
 
         iv3.setOnClickListener(new View.OnClickListener() {

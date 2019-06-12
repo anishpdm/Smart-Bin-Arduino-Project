@@ -6,15 +6,14 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class ViewGraph extends AppCompatActivity {
+public class BinMap extends AppCompatActivity {
     private WebView wv1;
     String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_graph);
-
-        url=Constants.ip+"forAppGraph.php";
+        setContentView(R.layout.activity_bin_map);
+        url=Constants.ip+"appMap.php";
         wv1 = (WebView) findViewById(R.id.webview);
         wv1.setWebViewClient(new MyBrowser());
         wv1.getSettings().setLoadsImagesAutomatically(true);

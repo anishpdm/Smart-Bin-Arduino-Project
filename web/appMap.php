@@ -1,5 +1,5 @@
 <?php
-include 'garbageboy_header.php';
+include './app_header.php';
 ?>
 
 <body>

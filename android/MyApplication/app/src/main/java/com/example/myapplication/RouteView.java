@@ -6,15 +6,15 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class ViewGraph extends AppCompatActivity {
+public class RouteView extends AppCompatActivity {
     private WebView wv1;
     String url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_graph);
+        setContentView(R.layout.activity_route_view);
 
-        url=Constants.ip+"forAppGraph.php";
+        url=Constants.ip+"appRoute.php";
         wv1 = (WebView) findViewById(R.id.webview);
         wv1.setWebViewClient(new MyBrowser());
         wv1.getSettings().setLoadsImagesAutomatically(true);
